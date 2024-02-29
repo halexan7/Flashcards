@@ -1,0 +1,102 @@
+html, body{
+  min-height: 100%;
+  min-width: 100%;
+  background: url("world.png") no-repeat center fixed;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.main{
+  display: flex;
+  /*background-color: blue;*/
+  width: 50%;
+  height: 50%;
+  place-items: center;
+  justify-content: center;
+}
+
+.grid{
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  /*background-color: white;*/
+  width: auto;
+  height: auto;
+  perspective: 1000px;
+}
+
+.card{
+  border: black 5px solid;
+  background-color: grey;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  position: relative;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+}
+
+.front, .back{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  position: absolute;
+}
+
+.front{
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.back{
+  z-index: 1;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card-text{
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.title{
+  color: black;
+  text-align: center;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.one:hover{
+  transform: rotateY(180deg);
+}
+.two:hover{
+  transform: rotateY(180deg);
+}
+.three:hover{
+  transform: rotateY(180deg);
+}
+.four:hover{
+  transform: rotateY(180deg);
+}
+.five:hover{
+  transform: rotateY(180deg);
+}
+.six:hover{
+  transform: rotateY(180deg);
+}
+.seven:hover{
+  transform: rotateY(180deg);
+}
+.eight:hover{
+  transform: rotateY(180deg);
+}
+.nine:hover{
+  transform: rotateY(180deg);
+}
+
